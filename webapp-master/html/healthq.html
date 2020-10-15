@@ -1,0 +1,125 @@
+
+<!--DAILY HEALTH QUESTIONNAIRE TAB HTML PAGE-->
+
+
+<!DOCTYPE html> 
+<html lang="en"> 
+
+    <head> 
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+
+        <title> daily health q's </title>
+
+        <!--LINK ICONS DIRECTORY-->
+        <link rel='icons' type='image/x-icon' href="https://covidsafetyapp.github.io/webapp/icons" />
+    
+        <!--LINK BOOTSTRAP CORE CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--INLINE STYLE-->
+        <style> 
+            .img-placeholder {
+                font-size: 1.125rem; 
+                text-anchor: middle; 
+            }
+
+            @media (min-width: 768px){
+                .img-placeholder-lg{
+                    font-size: 3.5rem; 
+                }
+            }            
+        </style> 
+
+        <!--LINK CUSTOM CSS-->
+        <link href="https://covidsafetyapp.github.io/webapp/css/app_style.css" rel="stylesheet" />
+        
+        <!--LINK FONT-->
+        <!--FONT IMPLEMENTATION: CARROIS GOTHIC-->
+        <link href='https://fonts.googleapis.com/css?family=Carrois Gothic' rel='stylesheet'/>
+
+    </head>
+
+    <body>
+      <div class="header">
+      </div>  
+
+      <div class="topnav">
+        <a href="https://covidsafetyapp.github.io/webapp/html/login.html"> 
+          log-in
+        </a>
+        <a href="https://covidsafetyapp.github.io/webapp/html/map.html"> 
+          map
+        </a>
+        <a href="https://covidsafetyapp.github.io/webapp/html/healthq.html"> 
+          Daily Health Q's
+        </a>
+        <a>
+          <img class="github-icon" type="image" href="https://covidsafetyapp.github.io/webapp/icons/github.png" onclick="window.location.href='https://github.com/covidsafetyapp/webapp'">
+        </a> 
+      </div>
+
+      <div class="row"> 
+        <div class="column">
+          <div class="card"> 
+            <a type="button" href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Only_Symptom_Tracking_Form" role="button"> student daily health form</a>
+          </div>
+        </div> 
+
+        <div class="column"> 
+          <div class="card"> 
+            <a type="button" href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Student_Symptom_Tracking_Form" role="button"> student employee daily health form</a>
+          </div>
+        </div>
+
+        <div class="column"> 
+          <div class="card"> 
+            <a type="button" href="https://portal.prod.cu.edu/psc/epprod/UCB2/ENTP/s/WEBLIB_CU_EFORM.ISCRIPT1.FieldFormula.IScript_Populate_eForm?form=UCB_WHS_Employee_Symptom_Tracking_Form" role="button">faculty/staff daily health form</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!--div for COVID result buttons and text -->
+      <div> 
+        <h1>have you recently received a COVID-19 test on the CU campus ?</h1>
+        <h2>check below to see if your results are ready and to find information on what to do with your results </h2>
+      </div>
+
+      <!--POSITIVE COVID TEST-->
+      <div> 
+        <h3>positive COVID-19 test ?</h3>
+        <p> did your most recent covid-19 test result came back positive? please click the button below to find information on what steps to take to keep yourself and your peers safe. hope you feel better soon! </p>
+        <a class="buttons" href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/isolation.html" role="button">Learn more...</a>
+      </div>
+
+       <!--NEGATIVE COVID TEST-->
+      <div> 
+        <h3>negative COVID-19 test ?</h3>
+        <p> did your most recent covid-19 test result came back negative? please click the button below to find information on how to continue being COVID safe.
+          <a class="buttons" href="https://www.colorado.edu/protect-our-herd/guides" role="button">Learn more...</a>
+        </p>
+       </div> 
+
+      <!--FOOTER NAVBAR-->
+      <div class="footer">
+        <!--LOGIN-->
+        <img class="icons" type="image" id="login" href="https://covidsafetyapp.github.io/webapp/icons/covid.png" onclick="window.location.href='https://covidsafetyapp.github.io/webapp/html/login.html'">
+        <!--INTERACTIVE MAP-->
+        <img class="icons" type="image" id="map" href="https://covidsafetyapp.github.io/webapp/icons/map.png" onclick="window.location.href='https://covidsafetyapp.github.io/webapp/html/map.html'">
+        <!--DAILY HEALTH Q-->
+        <img class="icons" type="image" id="health" href="https://covidsafetyapp.github.io/webapp/icons/healthq.png" onclick="window.location.href='https://covidsafetyapp.github.io/webapp/html/healthq.html'">
+
+      </div>
+
+
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+       <script src="https://covidsafetyapp.github.io/webapp/js/app_style.js"></script> <!--FULL APP JS-->
+    </body>
+</html>
+
